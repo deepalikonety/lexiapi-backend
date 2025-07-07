@@ -1,1 +1,1 @@
-web: gunicorn workspace.wsgi
+web: gunicorn lexiapi.wsgi
