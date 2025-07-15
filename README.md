@@ -10,10 +10,10 @@ LeXi AI is an AI-powered legal workspace dashboard that allows teams to manage c
 ## 📸 Screenshots
 
 ### Dashboard View
-![Dashboard View](./screenshots/Dashboard.png)
+![Dashboard View](./public/screenshots/Dashboard.png)
 
 ### Workspace Detail
-![Workspace Detail](./screenshots/Workspace.png)
+![Workspace Detail](./public/screenshots/Workspace.png)
 
 ---
 
@@ -51,34 +51,42 @@ LeXi AI is an AI-powered legal workspace dashboard that allows teams to manage c
 git clone https://github.com/deepalikonety/workspace-dashboard.git
 cd workspace-dashboard
 
-2. Install dependencies
-bash
-Copy
-Edit
+```
+### 2. Install dependencies
+
+```bash
+
 npm install
-3. Configure environment variables
+
+```
+
+###3. Configure environment variables
+
 Create a .env.local file:
+``` bash
 
 env
-Copy
-Edit
 NEXT_PUBLIC_API_URL=https://lexiapi-backend-1.onrender.com
-4. Start the development server
-bash
-Copy
-Edit
+
+```
+
+###4. Start the development server
+
+```bash
+
 npm run dev
+
+```
 Visit: http://localhost:3000
 
-🧪 Backend API Overview
+###🧪 Backend API Overview
 GET /api/workspaces/ – Fetch all workspaces
 
 POST /api/workspaces/ – Create a new workspace
 
-Sample POST Payload
+###Sample POST Payload
 json
-Copy
-Edit
+```bash 
 {
   "name": "Criminal Case",
   "client": "Dev",
@@ -91,10 +99,12 @@ Edit
   "date_of_incident": "2025-07-15",
   "representatives": "JD"
 }
-📁 Project Structure
+
+```
+
+###📁 Project Structure
 arduino
-Copy
-Edit
+```bash
 workspace-dashboard/
 ├── components/
 │   ├── CaseTabsBlock.tsx
@@ -108,6 +118,8 @@ workspace-dashboard/
 ├── .env.local
 ├── README.md
 └── ...
+```
+```
 🚧 Future Improvements
 🔐 Add authentication (JWT or OAuth)
 
@@ -116,7 +128,7 @@ workspace-dashboard/
 📊 Case metrics dashboard (number of cases by type/status)
 
 📁 Document extraction (PDF to structured data)
-
-👩‍💻 Author
+```
+###👩‍💻 Author
 Deepali Konety
 🔗 GitHub: github.com/deepalikonety
